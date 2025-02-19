@@ -1,8 +1,11 @@
 package main
 
-import ("fmt"
+import (
+	"fmt"
+	"os"
+
 	"golang.org/x/term"
-	"os")
+)
 
 func main() {
 	var name string
@@ -10,8 +13,8 @@ func main() {
 	fmt.Scan(&name)
 	fmt.Println("You entered: ", name)
 
-
-	fmt.Println("Now let's do it again, but secretly")
-	input string, _ := term.ReadPassword(int(os.Stdin.Fd()))
+	fmt.Print("Now let's do it again, but secretly: ")
+	inputBytes, _ := term.ReadPassword(int(os.Stdin.Fd()))
+	input := string(inputBytes)
 	fmt.Println("You entered: ", input)
 }
