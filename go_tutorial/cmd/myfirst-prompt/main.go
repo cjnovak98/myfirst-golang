@@ -34,5 +34,5 @@ func main() {
 	fmt.Println("You entered: ", result)
 
 	var secureresult string = readUserInputSecretly()
-	fmt.Println("You entered: ", secureresult)
+	fmt.Println("You securely entered: ", secureresult)
 }
