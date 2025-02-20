@@ -28,7 +28,7 @@ func canMakeIt(e engine, miles uint8) {
 	if miles <= e.milesLeft() {
 		fmt.Printf("You can make it! Of the %v mile trip, you've got %v miles left in the tank\n", miles, e.milesLeft()-miles)
 	} else {
-		fmt.Printf("You can't make it bucko! Fill up first!")
+		fmt.Printf("You can't make it bucko. Fill up first!")
 	}
 }
 
